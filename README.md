@@ -48,55 +48,11 @@
 
 ## 代码题Ⅰ
 
-### 练习1：
-
-```js
-let isLastInStock = fp.flowRight(fp.prop('in_stock'), fp.last)
-```
-
-### 练习2：
-
-```js
-let isFirstName = fp.flowRight(fp.prop('name'), fp.first)
-```
-
-### 练习3：
-
-```js
-let averageDollarValue = fp.flowRight(_average, fp.map(fp.prop('dollar_value')))
-```
-
-### 练习4：
-
-```js
-const sanitizeNames = fp.map(fp.flowRight(fp.toLower, _underscore, fp.prop('name')))
-```
+1. 下载依赖
+2. 在code目录下运行node program-practice-01.js
 
 ## 代码题Ⅱ
 
-### 练习1：
+1. 下载依赖
+2. 在code目录下运行node program-practice-02.js
 
-```js
-// increment 为增量
-let ex1 = increment => fp.map(fp.add(increment))
-// 示例，增量为3
-maybe.map(ex1(3))
-```
-
-### 练习2：
-
-```js
-let ex2 = xs.map(fp.first)._value
-```
-
-### 练习3：
-
-```js
-let ex3 = safeProp('name')(user).map(fp.first)._value
-```
-
-### 练习3：
-
-```js
-let ex4 = n => Maybe.of(n).map(x => parseInt(x))._value
-```
